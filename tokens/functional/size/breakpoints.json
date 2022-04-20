@@ -1,5 +1,5 @@
 {
-  "gh": {
+  "<namespace>": {
     "breakpoint": {
       "xsmall": {
         "value": "320px"

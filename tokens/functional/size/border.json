@@ -1,14 +1,14 @@
 {
-  "gh": {
+  "<namespace>": {
     "borderInset": {
       "thin": {
-        "value": "inset 0 0 0 {gh.borderWidth.thin}"
+        "value": "inset 0 0 0 {<namespace>.borderWidth.thin}"
       },
       "normal": {
-        "value": "inset 0 0 0 {gh.borderWidth.normal}"
+        "value": "inset 0 0 0 {<namespace>.borderWidth.normal}"
       },
       "thick": {
-        "value": "inset 0 0 0 {gh.borderWidth.thick}"
+        "value": "inset 0 0 0 {<namespace>.borderWidth.thick}"
       }
     },
     "borderWidth": {
