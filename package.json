@@ -5,7 +5,8 @@
   "files": [
     "dist",
     "tokens-v2-private",
-    "build-tokens.js"
+    "build.js",
+    "tokens/"
   ],
   "main": "dist/js/index.js",
   "types": "dist/js/index.d.ts",
@@ -26,7 +27,7 @@
   "homepage": "https://github.com/primer/primitives#readme",
   "scripts": {
     "build": "ts-node ./script/build.ts && tsc",
-    "build:tokens": "node ./build.js",
+    "build:tokens": "node -e \"require('./build').init()\"",
     "prebuild": "rm -rf dist",
     "prepack": "yarn build && yarn build:tokens",
     "prebuild:tokens": "rm -rf tokens-v2-private",
