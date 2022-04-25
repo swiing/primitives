@@ -27,7 +27,7 @@
   "homepage": "https://github.com/primer/primitives#readme",
   "scripts": {
     "build": "ts-node ./script/build.ts && tsc",
-    "build:tokens": "node -e \"require('./build').init()\"",
+    "build:tokens": "node -e \"require('./build')._init()\"",
     "prebuild": "rm -rf dist",
     "prepack": "yarn build && yarn build:tokens",
     "prebuild:tokens": "rm -rf tokens-v2-private",

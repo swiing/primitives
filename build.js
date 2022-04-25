@@ -81,7 +81,7 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerTransform({
   name: 'attribute/typescript',
   type: 'attribute',
-  transformer: (token, options) => {
+  transformer: token => {
     return {
       typescript: {
         // these transforms will need to match the ones you use for typescript
@@ -160,7 +160,7 @@ StyleDictionary.registerFormat({
 
 StyleDictionary.registerFormat({
   name: 'custom/format/custom-media',
-  formatter(dictionary) {
+  formatter({dictionary}) {
     return dictionary.allProperties
       .map(prop => {
         const {value, path, name} = prop
@@ -175,7 +175,7 @@ StyleDictionary.registerFormat({
 // format docs
 StyleDictionary.registerFormat({
   name: 'json/docs',
-  formatter: function(dictionary) {
+  formatter: function({dictionary}) {
     const groupedTokens = groupBy(dictionary.allProperties, 'filePath')
 
     return JSON.stringify(groupedTokens, null, 2)
@@ -271,8 +271,8 @@ StyleDictionary.registerFormat({
 })
 
 /**
- * groupBy
- * Equivalent to lodash _.groupBy, to avoid creating another package dependency for users
+ * @name groupBy
+ * @description Equivalent to lodash _.groupBy, to avoid creating another package dependency for users
  * @param {Array|Object} The collection to iterate over.
  * @param {Function} The iteratee to transform keys.
  * @returns {Object} Returns the composed aggregate object.
@@ -293,6 +293,25 @@ function groupBy(collection, iteratee = x => x) {
   }, {})
 }
 
+/**
+ * @name build
+ * @description
+ *   Used to generate design tokens programmatically using StyleDictionary
+ *   Called internally to build primitives and exported for self-serve use
+ *
+ * @param {Object} options
+ * @param {string} options.source glob or file path to a JSON object of tokens
+ * @param {string} options.outputPath location to write the output files
+ * @param {string} options.namespace a custom namespace to use for the output files
+ * @param {Platform} options.platforms add custom platform configurations to style-dictionary
+ * @example
+ *  build({
+ *   source: [`src/colors.json`],
+ *   outputPath: 'dist',
+ *   namespace: 'primer',
+ *   platforms: {...}
+ *  })
+ */
 function build({source, outputPath = 'tokens-v2-private', include, platforms, namespace = 'primer'}) {
   console.log('Build started...')
   console.log('\n==============================================')
@@ -426,7 +445,14 @@ function build({source, outputPath = 'tokens-v2-private', include, platforms, na
   }).buildAllPlatforms()
 }
 
-function init() {
+/**
+ * @name init
+ * @description
+ *   Triggers the build for @primer/primitive default tokens
+ *   from an npm script. Internal use only. Use `build` for self-serve.
+ * @private
+ */
+function _init() {
   const outputPath = 'tokens-v2-private'
   //build all tokens
   build({
@@ -490,5 +516,5 @@ function init() {
 
 module.exports = {
   build,
-  init
+  _init
 }
