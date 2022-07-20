@@ -3,71 +3,71 @@
     "size": {
       "4": {
         "value": "4px",
-        "type": "size"
+        "type": "sizing"
       },
       "8": {
         "value": "8px",
-        "type": "size"
+        "type": "sizing"
       },
       "12": {
         "value": "12px",
-        "type": "size"
+        "type": "sizing"
       },
       "16": {
         "value": "16px",
-        "type": "size"
+        "type": "sizing"
       },
       "20": {
         "value": "20px",
-        "type": "size"
+        "type": "sizing"
       },
       "24": {
         "value": "24px",
-        "type": "size"
+        "type": "sizing"
       },
       "28": {
         "value": "28px",
-        "type": "size"
+        "type": "sizing"
       },
       "32": {
         "value": "32px",
-        "type": "size"
+        "type": "sizing"
       },
       "36": {
         "value": "36px",
-        "type": "size"
+        "type": "sizing"
       },
       "40": {
         "value": "40px",
-        "type": "size"
+        "type": "sizing"
       },
       "44": {
         "value": "44px",
-        "type": "size"
+        "type": "sizing"
       },
       "48": {
         "value": "48px",
-        "type": "size"
+        "type": "sizing"
       },
       "64": {
         "value": "64px",
-        "type": "size"
+        "type": "sizing"
       },
       "80": {
         "value": "80px",
-        "type": "size"
+        "type": "sizing"
       },
       "96": {
         "value": "96px",
-        "type": "size"
+        "type": "sizing"
       },
       "112": {
         "value": "112px",
-        "type": "size"
+        "type": "sizing"
       },
       "128": {
         "value": "128px",
-        "type": "size"
+        "type": "sizing"
       }
     }
   }
