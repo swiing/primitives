@@ -3,88 +3,71 @@
     "size": {
       "4": {
         "value": "4px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "8": {
         "value": "8px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "12": {
         "value": "12px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "16": {
         "value": "16px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "20": {
         "value": "20px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "24": {
         "value": "24px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "28": {
         "value": "28px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "32": {
         "value": "32px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "36": {
         "value": "36px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "40": {
         "value": "40px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "44": {
         "value": "44px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "48": {
         "value": "48px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "64": {
         "value": "64px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "80": {
         "value": "80px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "96": {
         "value": "96px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "112": {
         "value": "112px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       },
       "128": {
         "value": "128px",
-        "type": "sizing",
-        "category": "base"
+        "type": "sizing"
       }
     }
   }
