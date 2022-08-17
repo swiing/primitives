@@ -2,38 +2,48 @@
   "primer": {
     "borderInset": {
       "thin": {
-        "value": "inset 0 0 0 {<namespace>.borderWidth.thin}"
+        "value": "inset 0 0 0 {primer.borderWidth.thin}",
+        "type": "boxShadow"
       },
       "thick": {
-        "value": "inset 0 0 0 {<namespace>.borderWidth.thick}"
+        "value": "inset 0 0 0 {primer.borderWidth.thick}",
+        "type": "boxShadow"
       },
       "thicker": {
-        "value": "inset 0 0 0 {<namespace>.borderWidth.thicker}"
+        "value": "inset 0 0 0 {primer.borderWidth.thicker}",
+        "type": "boxShadow"
       }
     },
     "borderWidth": {
       "thin": {
-        "value": "max(1px, 0.0625rem)"
+        "value": "max(1px, 0.0625rem)",
+        "type": "border"
       },
       "thick": {
-        "value": "max(2px, 0.125rem)"
+        "value": "max(2px, 0.125rem)",
+        "type": "border"
       },
       "thicker": {
-        "value": "max(4px, 0.25rem)"
+        "value": "max(4px, 0.25rem)",
+        "type": "border"
       }
     },
     "borderRadius": {
       "small": {
-        "value": "3px"
+        "value": "3px",
+        "type": "borderRadius"
       },
       "medium": {
-        "value": "6px"
+        "value": "6px",
+        "type": "borderRadius"
       },
       "large": {
-        "value": "12px"
+        "value": "12px",
+        "type": "borderRadius"
       },
       "full": {
-        "value": "100vh"
+        "value": "100vh",
+        "type": "borderRadius"
       }
     }
   }
