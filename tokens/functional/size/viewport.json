@@ -1,5 +1,5 @@
 {
-  "<namespace>": {
+  "primer": {
     "viewportRange": {
       "narrow": {
         "value": "(max-width: calc({<namespace>.breakpoint.medium} - 0.02px))"

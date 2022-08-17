@@ -1,5 +1,5 @@
 {
-  "<namespace>": {
+  "primer": {
     "borderInset": {
       "thin": {
         "value": "inset 0 0 0 {<namespace>.borderWidth.thin}"
