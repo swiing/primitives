@@ -101,6 +101,35 @@ module.exports = {
         ]
       }
     },
+    // rules which apply only to token json files
+    {
+      files: ['tokens/{functional,base}/**/*.{json,jsonc,json5}'],
+      rules: {
+        'no-dupe-keys': 0, // e.g. color scales all start with same keys,
+        // camelcase: ['error', {properties: 'always'}]
+        '@typescript-eslint/naming-convention': [
+          'error',
+          {selector: 'objectLiteralProperty', format: ['strictCamelCase']},
+          {
+            selector: 'objectLiteralProperty',
+            format: null,
+            filter: {
+              regex: '^[0-9]',
+              match: true
+            }
+          },
+          {
+            selector: 'objectLiteralProperty',
+            format: ['strictCamelCase'],
+            custom: {
+              // eslint-disable-next-line prettier/prettier, no-useless-escape
+              regex: '(value|type)',
+              match: false
+            }
+          }
+        ]
+      }
+    },
     // rules which apply only to tests files
     {
       files: ['**/*.test.{ts,tsx,js,jsx}'],
