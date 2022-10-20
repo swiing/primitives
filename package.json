@@ -37,7 +37,8 @@
     "release": "changeset publish",
     "build:color-tokens": "ts-node ./script/tempColorTokenBuild.ts",
     "test": "jest --verbose --coverage",
-    "watch": "ls data/**/*.scss script/**/*.ts | entr -s 'yarn build'"
+    "watch": "ls data/**/*.scss script/**/*.ts | entr -s 'yarn build'",
+    "check-colors": "ts-node script/color-contrast.ts"
   },
   "prettier": "@github/prettier-config",
   "devDependencies": {

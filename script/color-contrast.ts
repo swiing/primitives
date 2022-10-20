@@ -2,9 +2,13 @@ import {ContrastRequirement, contrastRequirements, canvasColors} from './color-c
 import {Table} from 'console-table-printer'
 import {flattenObject} from './utilities/flattenObject'
 import colors from '../dist/ts'
-import {writeFile} from 'fs'
+import {writeFileSync, mkdirSync, existsSync} from 'fs'
 import {normal} from 'color-blend'
 import {getContrast, parseToRgba, rgba} from 'color2k'
+import {markdownTable} from './markdownTable'
+import path from 'path'
+import {exec} from 'child_process'
+
 /**
  * Type definitions
  */
@@ -176,8 +180,43 @@ const results = Object.entries(contrastRequirements).map(([theme, colorPairs]: [
 })
 
 // write json file for workflow
-writeFile('dist/color-contrast-check.json', JSON.stringify(results), err => {
-  if (err) throw err
-  // eslint-disable-next-line no-console
-  console.log('The file has been saved!')
-})
+writeFileSync('dist/color-contrast-check.json', JSON.stringify(results))
+// write markdown file for workflow
+if (!existsSync('compare/diff')) {
+  mkdirSync('compare/diff')
+}
+if (!existsSync('compare/new')) {
+  mkdirSync('compare/new')
+}
+for (const item of results) {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  writeFileSync(`compare/new/${item.theme}.md`, markdownTable(item.results))
+}
+
+// Show & write diff
+const diffFiles = async (diffName: string, baseColors: string, newColors: string) => {
+  console.log(
+    `Running: /usr/bin/diff --unified=0 ${path.join(__dirname, '../', baseColors)} ${path.join(
+      __dirname,
+      '../',
+      newColors
+    )}`
+  )
+  await exec(
+    `/usr/bin/diff --unified=0 ${path.join(__dirname, '../', baseColors)} ${path.join(__dirname, '../', newColors)}`,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (_error: any, stdout: any, _stderr: any) => {
+      // success
+      writeFileSync(`compare/diff/${diffName}.diff`, stdout)
+      // eslint-disable-next-line no-console
+      console.log(`\n\n====================`, `\n\nDiff for ${diffName}\n\n`, `${stdout}`)
+      return
+    }
+  )
+}
+// Diff dark
+diffFiles(`light`, `compare/base/light.md`, `compare/new/light.md`)
+diffFiles(`dark`, `compare/base/dark.md`, `compare/new/dark.md`)
+
+//  /usr/bin/diff --unified=0  '/Users/lukasoppermann/GitHub/primitives/compare/base/light.md' '/Users/lukasoppermann/GitHub/primitives/compare/new/light.md' > compare/diff/diff.diff
