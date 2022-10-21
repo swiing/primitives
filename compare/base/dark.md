@@ -107,14 +107,7 @@
 | sponsors.fg vs. sponsors.muted on canvas.default | ❌ | 3.06: 1 | 4.5:1 |
 | sponsors.fg vs. sponsors.muted on canvas.subtle | ❌ | 2.79: 1 | 4.5:1 |
 | accent.fg vs. fg.default | ❌ | 1.63: 1 | 3:1 |
-| success.fg vs. fg.default | ❌ | 1.64: 1 | 3:1 |
-| open.fg vs. fg.default | ❌ | 1.64: 1 | 3:1 |
-| danger.fg vs. fg.default | ❌ | 2.17: 1 | 3:1 |
-| closed.fg vs. fg.default | ❌ | 2.17: 1 | 3:1 |
-| attention.fg vs. fg.default | ❌ | 1.63: 1 | 3:1 |
-| severe.fg vs. fg.default | ❌ | 2.18: 1 | 3:1 |
-| done.fg vs. fg.default | ❌ | 2.17: 1 | 3:1 |
-| sponsors.fg vs. fg.default | ❌ | 2.17: 1 | 3:1 |
+| accent.fg vs. fg.muted | ❌ | 1.21: 1 | 3:1 |
 | fg.onEmphasis vs. neutral.emphasis | ✅ | 4.59: 1 | 4.5:1 |
 | fg.onEmphasis vs. neutral.emphasisPlus | ✅ | 4.59: 1 | 4.5:1 |
 | fg.onEmphasis vs. accent.emphasis | ✅ | 4.63: 1 | 4.5:1 |

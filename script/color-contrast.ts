@@ -2,7 +2,7 @@ import {ContrastRequirement, contrastRequirements, canvasColors} from './color-c
 import {Table} from 'console-table-printer'
 import {flattenObject} from './utilities/flattenObject'
 import colors from '../dist/ts'
-import {writeFileSync, mkdirSync, existsSync} from 'fs'
+import {writeFileSync, mkdirSync, existsSync, readFileSync} from 'fs'
 import {normal} from 'color-blend'
 import {getContrast, parseToRgba, rgba} from 'color2k'
 import {markdownTable} from './markdownTable'
@@ -192,31 +192,54 @@ for (const item of results) {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   writeFileSync(`compare/new/${item.theme}.md`, markdownTable(item.results))
+  writeFileSync(`compare/new/${item.theme}.json`, JSON.stringify(item.results))
 }
 
 // Show & write diff
-const diffFiles = async (diffName: string, baseColors: string, newColors: string) => {
-  console.log(
-    `Running: /usr/bin/diff --unified=0 ${path.join(__dirname, '../', baseColors)} ${path.join(
+const diffFiles = async (fileName: string) => {
+  const oldBase: contrastTestResult[] = JSON.parse(readFileSync(`compare/base/${fileName}.json`).toString())
+  const newObj: contrastTestResult[] = JSON.parse(readFileSync(`compare/new/${fileName}.json`).toString())
+
+  const objectDiff: string[] = []
+  for (const [index, item] of oldBase.entries()) {
+    // no change in pass
+    if (item.pass === newObj[index].pass) continue
+    // change
+    objectDiff.push(`-| ${Object.values(item).join(' | ')}
++| ${Object.values(newObj[index]).join(' | ')}`)
+  }
+  //
+  const consolePassDiff = `${objectDiff
+    .map(diff => {
+      return diff.replace('-|', '\x1b[31m-|').replace('+|', '\x1b[32m+|')
+    })
+    .join(`\n`)}\x1b[0m`
+  // write pass diff
+  writeFileSync(`compare/diff/pass-${fileName}.diff`, objectDiff.join(`\n`))
+
+  await exec(
+    `/usr/bin/diff --unified=0 ${path.join(__dirname, '../', `compare/base/${fileName}.md`)} ${path.join(
       __dirname,
       '../',
-      newColors
-    )}`
-  )
-  await exec(
-    `/usr/bin/diff --unified=0 ${path.join(__dirname, '../', baseColors)} ${path.join(__dirname, '../', newColors)}`,
+      `compare/new/${fileName}.md`
+    )}`,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (_error: any, stdout: any, _stderr: any) => {
       // success
-      writeFileSync(`compare/diff/${diffName}.diff`, stdout)
+      writeFileSync(`compare/diff/full-${fileName}.diff`, stdout)
       // eslint-disable-next-line no-console
-      console.log(`\n\n====================`, `\n\nDiff for ${diffName}\n\n`, `${stdout}`)
+      console.log(
+        `\n\n====================`,
+        `\n\nDiff for ${fileName}\n`,
+        `\n${consolePassDiff || '\x1b[30mno significant changes\x1b[0m'}\n`,
+        `\nSee \x1b[34mcompare/diff/full-${fileName}.diff\x1b[0m for detailed changelog`
+      )
       return
     }
   )
 }
 // Diff dark
-diffFiles(`light`, `compare/base/light.md`, `compare/new/light.md`)
-diffFiles(`dark`, `compare/base/dark.md`, `compare/new/dark.md`)
+diffFiles(`light`)
+diffFiles(`dark`)
 
 //  /usr/bin/diff --unified=0  '/Users/lukasoppermann/GitHub/primitives/compare/base/light.md' '/Users/lukasoppermann/GitHub/primitives/compare/new/light.md' > compare/diff/diff.diff

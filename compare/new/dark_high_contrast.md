@@ -93,14 +93,7 @@
 | done.fg vs. done.muted | ❌ | 1: 1 | 4.5:1 |
 | sponsors.fg vs. sponsors.muted | ❌ | 1: 1 | 4.5:1 |
 | accent.fg vs. fg.default | ❌ | 1.9: 1 | 3:1 |
-| success.fg vs. fg.default | ❌ | 1.9: 1 | 3:1 |
-| open.fg vs. fg.default | ❌ | 1.9: 1 | 3:1 |
-| danger.fg vs. fg.default | ❌ | 2.5: 1 | 3:1 |
-| closed.fg vs. fg.default | ❌ | 2.5: 1 | 3:1 |
-| attention.fg vs. fg.default | ❌ | 1.63: 1 | 3:1 |
-| severe.fg vs. fg.default | ❌ | 2.49: 1 | 3:1 |
-| done.fg vs. fg.default | ❌ | 2.49: 1 | 3:1 |
-| sponsors.fg vs. fg.default | ❌ | 2.5: 1 | 3:1 |
+| accent.fg vs. fg.muted | ❌ | 1.9: 1 | 3:1 |
 | fg.onEmphasis vs. neutral.emphasis | ✅ | 8.04: 1 | 4.5:1 |
 | fg.onEmphasis vs. neutral.emphasisPlus | ✅ | 19.57: 1 | 4.5:1 |
 | fg.onEmphasis vs. accent.emphasis | ✅ | 7.03: 1 | 4.5:1 |

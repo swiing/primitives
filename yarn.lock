@@ -3170,11 +3170,6 @@
   "resolved" "https://registry.npmjs.org/get-stdin/-/get-stdin-4.0.1.tgz"
   "version" "4.0.1"
 
-"get-stdin@^5.0.1":
-  "integrity" "sha512-jZV7n6jGE3Gt7fgSTJoz91Ak5MuTLwMwkoYdjxuJ/AmjIsE1UC03y/IWkZCQGEvVNS9qoRNwy5BCqxImv0FVeA=="
-  "resolved" "https://registry.npmjs.org/get-stdin/-/get-stdin-5.0.1.tgz"
-  "version" "5.0.1"
-
 "get-stream@^6.0.0":
   "integrity" "sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg=="
   "resolved" "https://registry.npmjs.org/get-stream/-/get-stream-6.0.1.tgz"
@@ -5703,14 +5698,6 @@
   "resolved" "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-3.0.11.tgz"
   "version" "3.0.11"
 
-"split-text-to-chunks@^1.0.0":
-  "integrity" "sha512-HLtEwXK/T4l7QZSJ/kOSsZC0o5e2Xg3GzKKFxm0ZexJXw0Bo4CaEl39l7MCSRHk9EOOL5jT8JIDjmhTtcoe6lQ=="
-  "resolved" "https://registry.npmjs.org/split-text-to-chunks/-/split-text-to-chunks-1.0.0.tgz"
-  "version" "1.0.0"
-  dependencies:
-    "get-stdin" "^5.0.1"
-    "minimist" "^1.2.0"
-
 "sprintf-js@~1.0.2":
   "integrity" "sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw="
   "resolved" "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz"
@@ -5950,14 +5937,6 @@
   dependencies:
     "tslib" "^2.3.1"
     "uuid" "^8.3.2"
-
-"tablemark@^3.0.0":
-  "integrity" "sha512-7N05gRK7t6B4g8AtedUsKoKtPjplmUjOPr/V4kVB+7U3yGiB3WvKqMTTQzVCZyhfZUXgQFp9YyN9ZgC52uCPKw=="
-  "resolved" "https://registry.npmjs.org/tablemark/-/tablemark-3.0.0.tgz"
-  "version" "3.0.0"
-  dependencies:
-    "sentence-case" "^3.0.4"
-    "split-text-to-chunks" "^1.0.0"
 
 "tar@^6.0.2", "tar@^6.1.2":
   "integrity" "sha512-an/KZQzQUkZCkuoAA64hM92X0Urb6VpRhAFllDzz44U2mcD5scmT3zBc4VgVpkugF580+DQn8eAFSyoQt0tznA=="
