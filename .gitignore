@@ -7,3 +7,4 @@ node_modules
 /primitives/modes/
 /package-lock.json
 coverage/
+/compare/new/
