@@ -6,7 +6,7 @@ export type ContrastRequirement = [
   number, // minimumContrast
   string, // foregroundColor
   string, // backgroundColor
-  Options?
+  Options?,
 ]
 // basically for all non high contrast modes
 const baseRequirements: ContrastRequirement[] = [
@@ -18,6 +18,9 @@ const baseRequirements: ContrastRequirement[] = [
   [4.5, 'fg.muted', 'canvas.subtle'],
   [4.5, 'fg.default', 'canvas.inset'],
   [4.5, 'fg.muted', 'canvas.inset'],
+  // default text vs link
+  [3, 'fg.default', 'accent.fg'],
+  [3, 'fg.default', 'fg.muted'],
   // default text on role bg
   // TODO: contrast does not work with semi-transparent colors
   [4.5, 'fg.default', 'accent.subtle'],
@@ -78,26 +81,25 @@ const baseRequirements: ContrastRequirement[] = [
   [4.5, 'done.fg', 'done.subtle'],
   [4.5, 'sponsors.fg', 'sponsors.subtle'],
   //
-  // [4.5, 'accent.fg', 'accent.muted'],
-  // [4.5, 'success.fg', 'success.muted'],
-  // [4.5, 'open.fg', 'open.muted'],
-  // [4.5, 'danger.fg', 'danger.muted'],
-  // [4.5, 'closed.fg', 'closed.muted'],
-  // [4.5, 'attention.fg', 'attention.muted'],
-  // [4.5, 'severe.fg', 'severe.muted'],
-  // [4.5, 'done.fg', 'done.muted'],
-  // [4.5, 'sponsors.fg', 'sponsors.muted'],
+  [4.5, 'accent.fg', 'accent.muted'],
+  [4.5, 'success.fg', 'success.muted'],
+  [4.5, 'open.fg', 'open.muted'],
+  [4.5, 'danger.fg', 'danger.muted'],
+  [4.5, 'closed.fg', 'closed.muted'],
+  [4.5, 'attention.fg', 'attention.muted'],
+  [4.5, 'severe.fg', 'severe.muted'],
+  [4.5, 'done.fg', 'done.muted'],
+  [4.5, 'sponsors.fg', 'sponsors.muted'],
   // role text to default text
   [3, 'accent.fg', 'fg.default'],
-  [3, 'accent.fg', 'fg.muted'],
-  // [3, 'success.fg', 'fg.default'],
-  // [3, 'open.fg', 'fg.default'],
-  // [3, 'danger.fg', 'fg.default'],
-  // [3, 'closed.fg', 'fg.default'],
-  // [3, 'attention.fg', 'fg.default'],
-  // [3, 'severe.fg', 'fg.default'],
-  // [3, 'done.fg', 'fg.default'],
-  // [3, 'sponsors.fg', 'fg.default'],
+  [3, 'success.fg', 'fg.default'],
+  [3, 'open.fg', 'fg.default'],
+  [3, 'danger.fg', 'fg.default'],
+  [3, 'closed.fg', 'fg.default'],
+  [3, 'attention.fg', 'fg.default'],
+  [3, 'severe.fg', 'fg.default'],
+  [3, 'done.fg', 'fg.default'],
+  [3, 'sponsors.fg', 'fg.default'],
   // fg.onEmphasis
   [4.5, 'fg.onEmphasis', 'neutral.emphasis'],
   [4.5, 'fg.onEmphasis', 'neutral.emphasisPlus'],
@@ -112,7 +114,7 @@ const baseRequirements: ContrastRequirement[] = [
   [4.5, 'fg.onEmphasis', 'sponsors.emphasis'],
   // borders
   [3, 'border.default', 'canvas.default'],
-  [3, 'border.default', 'canvas.subtle']
+  [3, 'border.default', 'canvas.subtle'],
   // TODO: there are no specific border colors for roles
 ]
 
@@ -127,6 +129,9 @@ const highContrast: ContrastRequirement[] = [
     [7, 'fg.muted', 'canvas.subtle'],
     [7, 'fg.default', 'canvas.inset'],
     [7, 'fg.muted', 'canvas.inset'],
+    // default text vs link
+    [4.5, 'fg.default', 'accent.fg'],
+    [4.5, 'fg.default', 'fg.muted'],
     // default text on role bg
     // TODO: contrast does not work with semi-transparent colors
     [7, 'fg.default', 'accent.subtle'],
@@ -187,15 +192,15 @@ const highContrast: ContrastRequirement[] = [
     [7, 'done.fg', 'done.subtle'],
     [7, 'sponsors.fg', 'sponsors.subtle'],
     //
-    // [7, 'accent.fg', 'accent.muted'],
-    // [7, 'success.fg', 'success.muted'],
-    // [7, 'open.fg', 'open.muted'],
-    // [7, 'danger.fg', 'danger.muted'],
-    // [7, 'closed.fg', 'closed.muted'],
-    // [7, 'attention.fg', 'attention.muted'],
-    // [7, 'severe.fg', 'severe.muted'],
-    // [7, 'done.fg', 'done.muted'],
-    // [7, 'sponsors.fg', 'sponsors.muted'],
+    [7, 'accent.fg', 'accent.muted'],
+    [7, 'success.fg', 'success.muted'],
+    [7, 'open.fg', 'open.muted'],
+    [7, 'danger.fg', 'danger.muted'],
+    [7, 'closed.fg', 'closed.muted'],
+    [7, 'attention.fg', 'attention.muted'],
+    [7, 'severe.fg', 'severe.muted'],
+    [7, 'done.fg', 'done.muted'],
+    [7, 'sponsors.fg', 'sponsors.muted'],
     // fg.onEmphasis
     [7, 'fg.onEmphasis', 'neutral.emphasis'],
     [7, 'fg.onEmphasis', 'neutral.emphasisPlus'],
@@ -207,8 +212,8 @@ const highContrast: ContrastRequirement[] = [
     [7, 'fg.onEmphasis', 'attention.emphasis'],
     [7, 'fg.onEmphasis', 'severe.emphasis'],
     [7, 'fg.onEmphasis', 'done.emphasis'],
-    [7, 'fg.onEmphasis', 'sponsors.emphasis']
-  ] as ContrastRequirement[])
+    [7, 'fg.onEmphasis', 'sponsors.emphasis'],
+  ] as ContrastRequirement[]),
 ]
 
 export const canvasColors: string[] = ['canvas.default', 'canvas.subtle']
@@ -224,5 +229,5 @@ export const contrastRequirements: {[key: string]: ContrastRequirement[]} = {
   dark_dimmed: baseRequirements,
   dark_high_contrast: highContrast,
   dark_colorblind: baseRequirements,
-  dark_tritanopia: baseRequirements
+  dark_tritanopia: baseRequirements,
 }
