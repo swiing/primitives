@@ -7,6 +7,8 @@
 | fg.muted vs. canvas.subtle | ✅ | 6: 1 | 4.5:1 |
 | fg.default vs. canvas.inset | ✅ | 13.76: 1 | 4.5:1 |
 | fg.muted vs. canvas.inset | ✅ | 6: 1 | 4.5:1 |
+| fg.default vs. accent.fg | ❌ | 2.82: 1 | 3:1 |
+| fg.default vs. fg.muted | ❌ | 2.29: 1 | 3:1 |
 | fg.default vs. accent.subtle | ✅ | 12.87: 1 | 4.5:1 |
 | fg.default vs. success.subtle | ✅ | 12.87: 1 | 4.5:1 |
 | fg.default vs. open.subtle | ✅ | 13.59: 1 | 4.5:1 |
@@ -16,24 +18,6 @@
 | fg.default vs. severe.subtle | ✅ | 13.59: 1 | 4.5:1 |
 | fg.default vs. done.subtle | ✅ | 13.18: 1 | 4.5:1 |
 | fg.default vs. sponsors.subtle | ✅ | 13.21: 1 | 4.5:1 |
-| fg.default vs. accent.muted on canvas.default | ✅ | 10.54: 1 | 4.5:1 |
-| fg.default vs. accent.muted on canvas.subtle | ✅ | 10.04: 1 | 4.5:1 |
-| fg.default vs. success.muted on canvas.default | ✅ | 10.54: 1 | 4.5:1 |
-| fg.default vs. success.muted on canvas.subtle | ✅ | 10.04: 1 | 4.5:1 |
-| fg.default vs. open.muted on canvas.default | ✅ | 10.73: 1 | 4.5:1 |
-| fg.default vs. open.muted on canvas.subtle | ✅ | 10.28: 1 | 4.5:1 |
-| fg.default vs. danger.muted on canvas.default | ✅ | 10.73: 1 | 4.5:1 |
-| fg.default vs. danger.muted on canvas.subtle | ✅ | 10.28: 1 | 4.5:1 |
-| fg.default vs. closed.muted on canvas.default | ✅ | 11.35: 1 | 4.5:1 |
-| fg.default vs. closed.muted on canvas.subtle | ✅ | 10.84: 1 | 4.5:1 |
-| fg.default vs. attention.muted on canvas.default | ✅ | 10.78: 1 | 4.5:1 |
-| fg.default vs. attention.muted on canvas.subtle | ✅ | 10.33: 1 | 4.5:1 |
-| fg.default vs. severe.muted on canvas.default | ✅ | 10.73: 1 | 4.5:1 |
-| fg.default vs. severe.muted on canvas.subtle | ✅ | 10.28: 1 | 4.5:1 |
-| fg.default vs. done.muted on canvas.default | ✅ | 10.71: 1 | 4.5:1 |
-| fg.default vs. done.muted on canvas.subtle | ✅ | 10.27: 1 | 4.5:1 |
-| fg.default vs. sponsors.muted on canvas.default | ✅ | 10.51: 1 | 4.5:1 |
-| fg.default vs. sponsors.muted on canvas.subtle | ✅ | 10.09: 1 | 4.5:1 |
 | accent.fg vs. canvas.default | ✅ | 5.19: 1 | 4.5:1 |
 | accent.fg vs. canvas.subtle | ✅ | 4.87: 1 | 4.5:1 |
 | accent.fg vs. canvas.inset | ✅ | 4.87: 1 | 4.5:1 |
@@ -71,7 +55,14 @@
 | done.fg vs. done.subtle | ✅ | 4.53: 1 | 4.5:1 |
 | sponsors.fg vs. sponsors.subtle | ✅ | 4.55: 1 | 4.5:1 |
 | accent.fg vs. fg.default | ❌ | 2.82: 1 | 3:1 |
-| accent.fg vs. fg.muted | ❌ | 1.23: 1 | 3:1 |
+| success.fg vs. fg.default | ❌ | 2.82: 1 | 3:1 |
+| open.fg vs. fg.default | ✅ | 3.03: 1 | 3:1 |
+| danger.fg vs. fg.default | ✅ | 3.03: 1 | 3:1 |
+| closed.fg vs. fg.default | ✅ | 3.22: 1 | 3:1 |
+| attention.fg vs. fg.default | ✅ | 3.01: 1 | 3:1 |
+| severe.fg vs. fg.default | ✅ | 3.03: 1 | 3:1 |
+| done.fg vs. fg.default | ❌ | 2.9: 1 | 3:1 |
+| sponsors.fg vs. fg.default | ❌ | 2.9: 1 | 3:1 |
 | fg.onEmphasis vs. neutral.emphasis | ✅ | 4.54: 1 | 4.5:1 |
 | fg.onEmphasis vs. neutral.emphasisPlus | ✅ | 14.65: 1 | 4.5:1 |
 | fg.onEmphasis vs. accent.emphasis | ✅ | 5.19: 1 | 4.5:1 |
