@@ -180,14 +180,14 @@ export const canvasColors: string[] = ['canvas.default', 'canvas.subtle']
 
 export const contrastRequirements: {[key: string]: ContrastRequirement[]} = {
   // default light mode
-  light: baseRequirements,
+  // light: baseRequirements,
+  // light_colorblind: baseRequirements,
+  // light_tritanopia: baseRequirements,
   light_high_contrast: highContrast,
-  light_colorblind: baseRequirements,
-  light_tritanopia: baseRequirements,
   // default dark mode
-  dark: baseRequirements,
-  dark_dimmed: baseRequirements,
-  dark_high_contrast: highContrast,
-  dark_colorblind: baseRequirements,
-  dark_tritanopia: baseRequirements,
+  // dark: baseRequirements,
+  // dark_dimmed: baseRequirements,
+  // dark_high_contrast: highContrast,
+  // dark_colorblind: baseRequirements,
+  // dark_tritanopia: baseRequirements,
 }
