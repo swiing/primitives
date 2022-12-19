@@ -57,7 +57,7 @@ const runContrastTest = (colorPairs: ContrastRequirement[], scopedColors: any): 
       return {
         contrastPair,
         ...testContrast(minimumContrast, scopedColors[colorA], scopedColors[colorB], undefined, contrastPair),
-        minimumContrastRatio
+        minimumContrastRatio,
       }
     }
     // if colorB is semi-transparent
@@ -69,7 +69,7 @@ const runContrastTest = (colorPairs: ContrastRequirement[], scopedColors: any): 
     return canvasColorArrays.map(bg => ({
       contrastPair: `${contrastPair} on ${bg}`,
       ...testContrast(minimumContrast, scopedColors[colorA], scopedColors[colorB], scopedColors[bg], contrastPair),
-      minimumContrastRatio
+      minimumContrastRatio,
     }))
   })
 // )
@@ -88,7 +88,7 @@ const testContrast = (
   colorA: string,
   colorB: string,
   bg = '#ffffff',
-  contrastPair?: string
+  contrastPair?: string,
 ): {pass: string; contrastRatio: string} => {
   // get contrast
   let contrast = 0
@@ -103,7 +103,7 @@ const testContrast = (
   }
   return {
     pass: contrast >= minimumContrast ? '✅' : '❌',
-    contrastRatio: `${contrast}: 1`
+    contrastRatio: `${contrast}: 1`,
   }
 }
 /**
@@ -118,30 +118,30 @@ const renderConsoleTable = (theme: string, results: contrastTestResult[]): void 
     title: `Contrast checks for: ${theme}`,
     charLength: {'❌': 2, '✅': 2},
     colorMap: {
-      grey: '\x1b[0;30m' // define customized color
+      grey: '\x1b[0;30m', // define customized color
     },
     columns: [
       {
         name: 'contrastPair',
         alignment: 'left',
-        title: 'Color pair'
+        title: 'Color pair',
       },
       {
         name: 'pass',
         alignment: 'center',
-        title: 'Pass'
+        title: 'Pass',
       },
       {
         name: 'contrastRatio',
         alignment: 'left',
-        title: 'Contrast ratio'
+        title: 'Contrast ratio',
       },
       {
         name: 'minimumContrastRatio',
         alignment: 'left',
-        title: 'Min. ratio'
-      }
-    ]
+        title: 'Min. ratio',
+      },
+    ],
   })
   // add rows and color
   for (const [index, row] of results.entries()) {
@@ -151,7 +151,7 @@ const renderConsoleTable = (theme: string, results: contrastTestResult[]): void 
       color = 'grey'
     }
     contrastTable.addRow(row, {
-      color
+      color,
     })
   }
   // print table to console
@@ -175,7 +175,7 @@ const results = Object.entries(contrastRequirements).map(([theme, colorPairs]: [
   // return results for json file creation
   return {
     theme,
-    results: scopedResults
+    results: scopedResults,
   }
 })
 
@@ -221,7 +221,7 @@ const diffFiles = async (fileName: string) => {
     `/usr/bin/diff --unified=0 ${path.join(__dirname, '../', `compare/base/${fileName}.md`)} ${path.join(
       __dirname,
       '../',
-      `compare/new/${fileName}.md`
+      `compare/new/${fileName}.md`,
     )}`,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (_error: any, stdout: any, _stderr: any) => {
@@ -232,14 +232,11 @@ const diffFiles = async (fileName: string) => {
         `\n\n====================`,
         `\n\nDiff for ${fileName}\n`,
         `\n${consolePassDiff || '\x1b[30mno significant changes\x1b[0m'}\n`,
-        `\nSee \x1b[34mcompare/diff/full-${fileName}.diff\x1b[0m for detailed changelog`
+        `\nSee \x1b[34mcompare/diff/full-${fileName}.diff\x1b[0m for detailed changelog`,
       )
       return
-    }
+    },
   )
 }
 // Diff dark
 diffFiles(`light`)
-diffFiles(`dark`)
-
-//  /usr/bin/diff --unified=0  '/Users/lukasoppermann/GitHub/primitives/compare/base/light.md' '/Users/lukasoppermann/GitHub/primitives/compare/new/light.md' > compare/diff/diff.diff
