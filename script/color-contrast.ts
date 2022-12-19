@@ -170,8 +170,14 @@ const results = Object.entries(contrastRequirements).map(([theme, colorPairs]: [
 
   // run tests on all color pairs
   const scopedResults = runContrastTest(colorPairs, flattenColors)
+  // failing contrasts
+  const failingContrast = scopedResults.reduce((acc, cur) => (cur.pass === '❌' ? acc + 1 : acc), 0)
   // print results to console
   renderConsoleTable(theme, scopedResults)
+  if (failingContrast > 0) {
+    // eslint-disable-next-line no-console
+    console.error('❌ Failing contrast checks:', failingContrast, '\n')
+  }
   // return results for json file creation
   return {
     theme,
@@ -239,4 +245,4 @@ const diffFiles = async (fileName: string) => {
   )
 }
 // Diff dark
-diffFiles(`light`)
+diffFiles(`light_high_contrast`)
