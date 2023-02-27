@@ -5,6 +5,7 @@ import {
   colorToHexAlpha,
   colorToRgbAlpha,
   colorToHex,
+  dimensionToPoint,
   fontFamilyToCss,
   fontWeightToNumber,
   jsonDeprecated,
@@ -13,7 +14,6 @@ import {
   namePathToKebabCase,
   shadowToCss,
   typographyToCss,
-  colorToHexMix,
 } from './transformers'
 import {
   scssMixinCssVariables,
@@ -22,6 +22,7 @@ import {
   typescriptExportDefinition,
   jsonNestedPrefixed,
   cssThemed,
+  swiftEnumCgfloat,
 } from './formats'
 
 /**
@@ -64,6 +65,11 @@ StyleDictionary.registerFormat({
   formatter: jsonNestedPrefixed,
 })
 
+StyleDictionary.registerFormat({
+  name: 'ios-swift/enum-CGFloat.swift',
+  formatter: swiftEnumCgfloat,
+})
+
 /**
  * Transformers
  *
@@ -79,13 +85,13 @@ StyleDictionary.registerTransform({
 })
 
 StyleDictionary.registerTransform({
-  name: 'color/hexMix',
-  ...colorToHexMix,
+  name: 'color/hex',
+  ...colorToHex,
 })
 
 StyleDictionary.registerTransform({
-  name: 'color/hex',
-  ...colorToHex,
+  name: 'dimension/point',
+  ...dimensionToPoint,
 })
 
 StyleDictionary.registerTransform({
