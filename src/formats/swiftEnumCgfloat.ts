@@ -15,7 +15,7 @@ export const swiftEnumCgfloat: StyleDictionary.Formatter = ({dictionary, file, p
   const output = `${fileHeader({file})}${`
   import UIKit
 
-  enum ${upperCaseFirstCharacter(fnName)}: CGFloat {
+  public enum ${upperCaseFirstCharacter(fnName)}: CGFloat {
     ${dictionary.allTokens.map(token => `case ${token.name} = ${token.value}`).join('\n    ')}
   }
 
