@@ -6,6 +6,7 @@ import deepmerge from 'deepmerge'
 const preview = {
   parameters: {
     actions: {argTypesRegex: '^on[A-Z].*'},
+    backgrounds: {disable: true},
     layout: 'fullscreen',
     controls: {
       matchers: {
@@ -32,7 +33,7 @@ export const globalTypes = {
     description: 'Switch themes',
     defaultValue: 'light',
     toolbar: {
-      icon: 'circlehollow',
+      icon: 'contrast',
       items: [...primerThemes, 'all'],
       showName: true,
     },
