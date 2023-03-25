@@ -3,13 +3,15 @@ import clsx from 'clsx'
 import {ThemeProvider, theme} from '@primer/react'
 import deepmerge from 'deepmerge'
 
-export const parameters = {
-  actions: {argTypesRegex: '^on[A-Z].*'},
-  layout: 'fullscreen',
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+const preview = {
+  parameters: {
+    actions: {argTypesRegex: '^on[A-Z].*'},
+    layout: 'fullscreen',
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
     },
   },
 }
@@ -36,9 +38,6 @@ export const globalTypes = {
     },
   },
 }
-
-// storyType is a decorator connected to a parameter which lets us configure story-specific layouts and other customization at the global level.
-// type 'swatch' is the default, and creates a simple responsive grid of swatches.
 
 const tempTheme = deepmerge(theme, {
   colorSchemes: {
@@ -313,6 +312,9 @@ const tempTheme = deepmerge(theme, {
   },
 })
 
+// storyType is a decorator connected to a parameter which lets us configure story-specific layouts and other customization at the global level.
+// type 'swatch' is the default, and creates a simple responsive grid of swatches.
+
 export const decorators = [
   (Story, context) => {
     const {parameters} = context
@@ -356,3 +358,5 @@ export const decorators = [
     )
   },
 ]
+
+export default preview
