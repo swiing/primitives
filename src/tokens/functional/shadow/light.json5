@@ -129,7 +129,7 @@
       xsmall: {
         $value: {
           color: '{base.color.black}',
-          alpha: 0.1,
+          alpha: 0.4,
           offsetX: '0px',
           offsetY: '1px',
           blur: '0px',
@@ -142,7 +142,7 @@
         $value: [
           {
             color: '{base.color.black}',
-            alpha: 0.06,
+            alpha: 0.04,
             offsetX: '0px',
             offsetY: '1px',
             blur: '0px',
@@ -151,7 +151,7 @@
           },
           {
             color: '{base.color.black}',
-            alpha: 0.08,
+            alpha: 0.04,
             offsetX: '0px',
             offsetY: '1px',
             blur: '3px',
