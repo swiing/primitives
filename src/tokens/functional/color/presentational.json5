@@ -1,844 +1,846 @@
 {
+  color: {
   presentational: {
     coral: {
       '0': {
-        $value: '{base.presentational.coral.0}',
+        $value: '{base.color.coral.0}',
         $type: 'color',
       },
       '1': {
-        $value: '{base.presentational.coral.1}',
+        $value: '{base.color.coral.1}',
         $type: 'color',
       },
       '2': {
-        $value: '{base.presentational.coral.2}',
+        $value: '{base.color.coral.2}',
         $type: 'color',
       },
       '3': {
-        $value: '{base.presentational.coral.3}',
+        $value: '{base.color.coral.3}',
         $type: 'color',
       },
       '4': {
-        $value: '{base.presentational.coral.4}',
+        $value: '{base.color.coral.4}',
         $type: 'color',
       },
       '5': {
-        $value: '{base.presentational.coral.5}',
+        $value: '{base.color.coral.5}',
         $type: 'color',
       },
       '6': {
-        $value: '{base.presentational.coral.6}',
+        $value: '{base.color.coral.6}',
         $type: 'color',
       },
       '7': {
-        $value: '{base.presentational.coral.7}',
+        $value: '{base.color.coral.7}',
         $type: 'color',
       },
       '8': {
-        $value: '{base.presentational.coral.8}',
+        $value: '{base.color.coral.8}',
         $type: 'color',
       },
       '9': {
-        $value: '{base.presentational.coral.9}',
+        $value: '{base.color.coral.9}',
         $type: 'color',
       },
     },
     red: {
       '0': {
-        $value: '{base.presentational.red.0}',
+        $value: '{base.color.red.0}',
         $type: 'color',
       },
       '1': {
-        $value: '{base.presentational.red.1}',
+        $value: '{base.color.red.1}',
         $type: 'color',
       },
       '2': {
-        $value: '{base.presentational.red.2}',
+        $value: '{base.color.red.2}',
         $type: 'color',
       },
       '3': {
-        $value: '{base.presentational.red.3}',
+        $value: '{base.color.red.3}',
         $type: 'color',
       },
       '4': {
-        $value: '{base.presentational.red.4}',
+        $value: '{base.color.red.4}',
         $type: 'color',
       },
       '5': {
-        $value: '{base.presentational.red.5}',
+        $value: '{base.color.red.5}',
         $type: 'color',
       },
       '6': {
-        $value: '{base.presentational.red.6}',
+        $value: '{base.color.red.6}',
         $type: 'color',
       },
       '7': {
-        $value: '{base.presentational.red.7}',
+        $value: '{base.color.red.7}',
         $type: 'color',
       },
       '8': {
-        $value: '{base.presentational.red.8}',
+        $value: '{base.color.red.8}',
         $type: 'color',
       },
       '9': {
-        $value: '{base.presentational.red.9}',
+        $value: '{base.color.red.9}',
         $type: 'color',
       },
     },
     pink: {
       '0': {
-        $value: '{base.presentational.pink.0}',
+        $value: '{base.color.pink.0}',
         $type: 'color',
       },
       '1': {
-        $value: '{base.presentational.pink.1}',
+        $value: '{base.color.pink.1}',
         $type: 'color',
       },
       '2': {
-        $value: '{base.presentational.pink.2}',
+        $value: '{base.color.pink.2}',
         $type: 'color',
       },
       '3': {
-        $value: '{base.presentational.pink.3}',
+        $value: '{base.color.pink.3}',
         $type: 'color',
       },
       '4': {
-        $value: '{base.presentational.pink.4}',
+        $value: '{base.color.pink.4}',
         $type: 'color',
       },
       '5': {
-        $value: '{base.presentational.pink.5}',
+        $value: '{base.color.pink.5}',
         $type: 'color',
       },
       '6': {
-        $value: '{base.presentational.pink.6}',
+        $value: '{base.color.pink.6}',
         $type: 'color',
       },
       '7': {
-        $value: '{base.presentational.pink.7}',
+        $value: '{base.color.pink.7}',
         $type: 'color',
       },
       '8': {
-        $value: '{base.presentational.pink.8}',
+        $value: '{base.color.pink.8}',
         $type: 'color',
       },
       '9': {
-        $value: '{base.presentational.pink.9}',
+        $value: '{base.color.pink.9}',
         $type: 'color',
       },
     },
-    plum: {
-      '0': {
-        $value: '{base.presentational.plum.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.plum.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.plum.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.plum.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.plum.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.plum.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.plum.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.plum.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.plum.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.plum.9}',
-        $type: 'color',
-      },
-    },
+    // plum: {
+    //   '0': {
+    //     $value: '{base.color.plum.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.plum.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.plum.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.plum.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.plum.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.plum.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.plum.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.plum.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.plum.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.plum.9}',
+    //     $type: 'color',
+    //   },
+    // },
     purple: {
       '0': {
-        $value: '{base.presentational.purple.0}',
+        $value: '{base.color.purple.0}',
         $type: 'color',
       },
       '1': {
-        $value: '{base.presentational.purple.1}',
+        $value: '{base.color.purple.1}',
         $type: 'color',
       },
       '2': {
-        $value: '{base.presentational.purple.2}',
+        $value: '{base.color.purple.2}',
         $type: 'color',
       },
       '3': {
-        $value: '{base.presentational.purple.3}',
+        $value: '{base.color.purple.3}',
         $type: 'color',
       },
       '4': {
-        $value: '{base.presentational.purple.4}',
+        $value: '{base.color.purple.4}',
         $type: 'color',
       },
       '5': {
-        $value: '{base.presentational.purple.5}',
+        $value: '{base.color.purple.5}',
         $type: 'color',
       },
       '6': {
-        $value: '{base.presentational.purple.6}',
+        $value: '{base.color.purple.6}',
         $type: 'color',
       },
       '7': {
-        $value: '{base.presentational.purple.7}',
+        $value: '{base.color.purple.7}',
         $type: 'color',
       },
       '8': {
-        $value: '{base.presentational.purple.8}',
+        $value: '{base.color.purple.8}',
         $type: 'color',
       },
       '9': {
-        $value: '{base.presentational.purple.9}',
+        $value: '{base.color.purple.9}',
         $type: 'color',
       },
     },
-    indigo: {
-      '0': {
-        $value: '{base.presentational.indigo.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.indigo.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.indigo.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.indigo.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.indigo.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.indigo.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.indigo.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.indigo.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.indigo.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.indigo.9}',
-        $type: 'color',
-      },
-    },
+    // indigo: {
+    //   '0': {
+    //     $value: '{base.color.indigo.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.indigo.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.indigo.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.indigo.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.indigo.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.indigo.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.indigo.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.indigo.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.indigo.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.indigo.9}',
+    //     $type: 'color',
+    //   },
+    // },
     blue: {
       '0': {
-        $value: '{base.presentational.blue.0}',
+        $value: '{base.color.blue.0}',
         $type: 'color',
       },
       '1': {
-        $value: '{base.presentational.blue.1}',
+        $value: '{base.color.blue.1}',
         $type: 'color',
       },
       '2': {
-        $value: '{base.presentational.blue.2}',
+        $value: '{base.color.blue.2}',
         $type: 'color',
       },
       '3': {
-        $value: '{base.presentational.blue.3}',
+        $value: '{base.color.blue.3}',
         $type: 'color',
       },
       '4': {
-        $value: '{base.presentational.blue.4}',
+        $value: '{base.color.blue.4}',
         $type: 'color',
       },
       '5': {
-        $value: '{base.presentational.blue.5}',
+        $value: '{base.color.blue.5}',
         $type: 'color',
       },
       '6': {
-        $value: '{base.presentational.blue.6}',
+        $value: '{base.color.blue.6}',
         $type: 'color',
       },
       '7': {
-        $value: '{base.presentational.blue.7}',
+        $value: '{base.color.blue.7}',
         $type: 'color',
       },
       '8': {
-        $value: '{base.presentational.blue.8}',
+        $value: '{base.color.blue.8}',
         $type: 'color',
       },
       '9': {
-        $value: '{base.presentational.blue.9}',
+        $value: '{base.color.blue.9}',
         $type: 'color',
       },
     },
-    cyan: {
-      '0': {
-        $value: '{base.presentational.cyan.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.cyan.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.cyan.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.cyan.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.cyan.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.cyan.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.cyan.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.cyan.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.cyan.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.cyan.9}',
-        $type: 'color',
-      },
-    },
-    teal: {
-      '0': {
-        $value: '{base.presentational.teal.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.teal.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.teal.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.teal.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.teal.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.teal.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.teal.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.teal.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.teal.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.teal.9}',
-        $type: 'color',
-      },
-    },
-    pine: {
-      '0': {
-        $value: '{base.presentational.pine.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.pine.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.pine.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.pine.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.pine.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.pine.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.pine.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.pine.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.pine.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.pine.9}',
-        $type: 'color',
-      },
-    },
+    // cyan: {
+    //   '0': {
+    //     $value: '{base.color.cyan.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.cyan.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.cyan.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.cyan.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.cyan.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.cyan.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.cyan.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.cyan.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.cyan.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.cyan.9}',
+    //     $type: 'color',
+    //   },
+    // },
+    // teal: {
+    //   '0': {
+    //     $value: '{base.color.teal.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.teal.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.teal.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.teal.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.teal.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.teal.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.teal.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.teal.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.teal.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.teal.9}',
+    //     $type: 'color',
+    //   },
+    // },
+    // pine: {
+    //   '0': {
+    //     $value: '{base.color.pine.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.pine.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.pine.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.pine.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.pine.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.pine.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.pine.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.pine.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.pine.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.pine.9}',
+    //     $type: 'color',
+    //   },
+    // },
     green: {
       '0': {
-        $value: '{base.presentational.green.0}',
+        $value: '{base.color.green.0}',
         $type: 'color',
       },
       '1': {
-        $value: '{base.presentational.green.1}',
+        $value: '{base.color.green.1}',
         $type: 'color',
       },
       '2': {
-        $value: '{base.presentational.green.2}',
+        $value: '{base.color.green.2}',
         $type: 'color',
       },
       '3': {
-        $value: '{base.presentational.green.3}',
+        $value: '{base.color.green.3}',
         $type: 'color',
       },
       '4': {
-        $value: '{base.presentational.green.4}',
+        $value: '{base.color.green.4}',
         $type: 'color',
       },
       '5': {
-        $value: '{base.presentational.green.5}',
+        $value: '{base.color.green.5}',
         $type: 'color',
       },
       '6': {
-        $value: '{base.presentational.green.6}',
+        $value: '{base.color.green.6}',
         $type: 'color',
       },
       '7': {
-        $value: '{base.presentational.green.7}',
+        $value: '{base.color.green.7}',
         $type: 'color',
       },
       '8': {
-        $value: '{base.presentational.green.8}',
+        $value: '{base.color.green.8}',
         $type: 'color',
       },
       '9': {
-        $value: '{base.presentational.green.9}',
+        $value: '{base.color.green.9}',
         $type: 'color',
       },
     },
-    lime: {
-      '0': {
-        $value: '{base.presentational.lime.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.lime.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.lime.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.lime.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.lime.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.lime.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.lime.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.lime.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.lime.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.lime.9}',
-        $type: 'color',
-      },
-    },
-    olive: {
-      '0': {
-        $value: '{base.presentational.olive.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.olive.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.olive.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.olive.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.olive.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.olive.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.olive.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.olive.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.olive.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.olive.9}',
-        $type: 'color',
-      },
-    },
-    lemon: {
-      '0': {
-        $value: '{base.presentational.lemon.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.lemon.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.lemon.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.lemon.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.lemon.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.lemon.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.lemon.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.lemon.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.lemon.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.lemon.9}',
-        $type: 'color',
-      },
-    },
+    // lime: {
+    //   '0': {
+    //     $value: '{base.color.lime.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.lime.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.lime.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.lime.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.lime.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.lime.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.lime.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.lime.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.lime.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.lime.9}',
+    //     $type: 'color',
+    //   },
+    // },
+    // olive: {
+    //   '0': {
+    //     $value: '{base.color.olive.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.olive.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.olive.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.olive.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.olive.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.olive.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.olive.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.olive.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.olive.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.olive.9}',
+    //     $type: 'color',
+    //   },
+    // },
+    // lemon: {
+    //   '0': {
+    //     $value: '{base.color.lemon.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.lemon.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.lemon.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.lemon.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.lemon.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.lemon.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.lemon.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.lemon.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.lemon.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.lemon.9}',
+    //     $type: 'color',
+    //   },
+    // },
     yellow: {
       '0': {
-        $value: '{base.presentational.yellow.0}',
+        $value: '{base.color.yellow.0}',
         $type: 'color',
       },
       '1': {
-        $value: '{base.presentational.yellow.1}',
+        $value: '{base.color.yellow.1}',
         $type: 'color',
       },
       '2': {
-        $value: '{base.presentational.yellow.2}',
+        $value: '{base.color.yellow.2}',
         $type: 'color',
       },
       '3': {
-        $value: '{base.presentational.yellow.3}',
+        $value: '{base.color.yellow.3}',
         $type: 'color',
       },
       '4': {
-        $value: '{base.presentational.yellow.4}',
+        $value: '{base.color.yellow.4}',
         $type: 'color',
       },
       '5': {
-        $value: '{base.presentational.yellow.5}',
+        $value: '{base.color.yellow.5}',
         $type: 'color',
       },
       '6': {
-        $value: '{base.presentational.yellow.6}',
+        $value: '{base.color.yellow.6}',
         $type: 'color',
       },
       '7': {
-        $value: '{base.presentational.yellow.7}',
+        $value: '{base.color.yellow.7}',
         $type: 'color',
       },
       '8': {
-        $value: '{base.presentational.yellow.8}',
+        $value: '{base.color.yellow.8}',
         $type: 'color',
       },
       '9': {
-        $value: '{base.presentational.yellow.9}',
+        $value: '{base.color.yellow.9}',
         $type: 'color',
       },
     },
-    amber: {
-      '0': {
-        $value: '{base.presentational.amber.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.amber.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.amber.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.amber.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.amber.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.amber.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.amber.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.amber.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.amber.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.amber.9}',
-        $type: 'color',
-      },
-    },
+    // amber: {
+    //   '0': {
+    //     $value: '{base.color.amber.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.amber.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.amber.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.amber.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.amber.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.amber.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.amber.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.amber.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.amber.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.amber.9}',
+    //     $type: 'color',
+    //   },
+    // },
     orange: {
       '0': {
-        $value: '{base.presentational.orange.0}',
+        $value: '{base.color.orange.0}',
         $type: 'color',
       },
       '1': {
-        $value: '{base.presentational.orange.1}',
+        $value: '{base.color.orange.1}',
         $type: 'color',
       },
       '2': {
-        $value: '{base.presentational.orange.2}',
+        $value: '{base.color.orange.2}',
         $type: 'color',
       },
       '3': {
-        $value: '{base.presentational.orange.3}',
+        $value: '{base.color.orange.3}',
         $type: 'color',
       },
       '4': {
-        $value: '{base.presentational.orange.4}',
+        $value: '{base.color.orange.4}',
         $type: 'color',
       },
       '5': {
-        $value: '{base.presentational.orange.5}',
+        $value: '{base.color.orange.5}',
         $type: 'color',
       },
       '6': {
-        $value: '{base.presentational.orange.6}',
+        $value: '{base.color.orange.6}',
         $type: 'color',
       },
       '7': {
-        $value: '{base.presentational.orange.7}',
+        $value: '{base.color.orange.7}',
         $type: 'color',
       },
       '8': {
-        $value: '{base.presentational.orange.8}',
+        $value: '{base.color.orange.8}',
         $type: 'color',
       },
       '9': {
-        $value: '{base.presentational.orange.9}',
+        $value: '{base.color.orange.9}',
         $type: 'color',
       },
     },
-    brown: {
-      '0': {
-        $value: '{base.presentational.brown.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.brown.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.brown.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.brown.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.brown.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.brown.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.brown.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.brown.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.brown.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.brown.9}',
-        $type: 'color',
-      },
-    },
-    aubern: {
-      '0': {
-        $value: '{base.presentational.aubern.0}',
-        $type: 'color',
-      },
-      '1': {
-        $value: '{base.presentational.aubern.1}',
-        $type: 'color',
-      },
-      '2': {
-        $value: '{base.presentational.aubern.2}',
-        $type: 'color',
-      },
-      '3': {
-        $value: '{base.presentational.aubern.3}',
-        $type: 'color',
-      },
-      '4': {
-        $value: '{base.presentational.aubern.4}',
-        $type: 'color',
-      },
-      '5': {
-        $value: '{base.presentational.aubern.5}',
-        $type: 'color',
-      },
-      '6': {
-        $value: '{base.presentational.aubern.6}',
-        $type: 'color',
-      },
-      '7': {
-        $value: '{base.presentational.aubern.7}',
-        $type: 'color',
-      },
-      '8': {
-        $value: '{base.presentational.aubern.8}',
-        $type: 'color',
-      },
-      '9': {
-        $value: '{base.presentational.aubern.9}',
-        $type: 'color',
-      },
-    },
+    // brown: {
+    //   '0': {
+    //     $value: '{base.color.brown.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.brown.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.brown.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.brown.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.brown.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.brown.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.brown.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.brown.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.brown.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.brown.9}',
+    //     $type: 'color',
+    //   },
+    // },
+    // aubern: {
+    //   '0': {
+    //     $value: '{base.color.aubern.0}',
+    //     $type: 'color',
+    //   },
+    //   '1': {
+    //     $value: '{base.color.aubern.1}',
+    //     $type: 'color',
+    //   },
+    //   '2': {
+    //     $value: '{base.color.aubern.2}',
+    //     $type: 'color',
+    //   },
+    //   '3': {
+    //     $value: '{base.color.aubern.3}',
+    //     $type: 'color',
+    //   },
+    //   '4': {
+    //     $value: '{base.color.aubern.4}',
+    //     $type: 'color',
+    //   },
+    //   '5': {
+    //     $value: '{base.color.aubern.5}',
+    //     $type: 'color',
+    //   },
+    //   '6': {
+    //     $value: '{base.color.aubern.6}',
+    //     $type: 'color',
+    //   },
+    //   '7': {
+    //     $value: '{base.color.aubern.7}',
+    //     $type: 'color',
+    //   },
+    //   '8': {
+    //     $value: '{base.color.aubern.8}',
+    //     $type: 'color',
+    //   },
+    //   '9': {
+    //     $value: '{base.color.aubern.9}',
+    //     $type: 'color',
+    //   },
+    // },
     gray: {
       '0': {
-        $value: '{base.presentational.gray.0}',
+        $value: '{base.color.gray.0}',
         $type: 'color',
       },
       '1': {
-        $value: '{base.presentational.gray.1}',
+        $value: '{base.color.gray.1}',
         $type: 'color',
       },
       '2': {
-        $value: '{base.presentational.gray.2}',
+        $value: '{base.color.gray.2}',
         $type: 'color',
       },
       '3': {
-        $value: '{base.presentational.gray.3}',
+        $value: '{base.color.gray.3}',
         $type: 'color',
       },
       '4': {
-        $value: '{base.presentational.gray.4}',
+        $value: '{base.color.gray.4}',
         $type: 'color',
       },
       '5': {
-        $value: '{base.presentational.gray.5}',
+        $value: '{base.color.gray.5}',
         $type: 'color',
       },
       '6': {
-        $value: '{base.presentational.gray.6}',
+        $value: '{base.color.gray.6}',
         $type: 'color',
       },
       '7': {
-        $value: '{base.presentational.gray.7}',
+        $value: '{base.color.gray.7}',
         $type: 'color',
       },
       '8': {
-        $value: '{base.presentational.gray.8}',
+        $value: '{base.color.gray.8}',
         $type: 'color',
       },
       '9': {
-        $value: '{base.presentational.gray.9}',
+        $value: '{base.color.gray.9}',
         $type: 'color',
       },
     },
   },
+}
 }

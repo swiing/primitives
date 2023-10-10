@@ -12,7 +12,10 @@ import {
   Label,
   Pagehead,
   ProgressBar,
+  SegmentedControl,
   Text,
+  TextInput,
+  ToggleSwitch,
   Token,
 } from '@primer/react'
 import React from 'react'
@@ -28,7 +31,6 @@ const variants = [
   'cyan',
   'teal',
   'pine',
-  'oldgreen',
   'green',
   'lime',
   'olive',
@@ -61,11 +63,11 @@ const renderKitchenSink = (variant: (typeof variants)[number], width?: number) =
     <Box sx={{width: width ? `${width}px` : 'auto'}}>
       <Flash
         sx={{
-          backgroundColor: `var(--presentational-ui-${variant}-background-muted)`,
-          border: `1px solid var(--presentational-ui-${variant}-border-muted)`,
-          color: `var(--presentational-ui-${variant}-text)`,
+          backgroundColor: `var(--color-presentational-${variant}-0)`,
+          border: `1px solid var(--color-presentational-${variant}-4)`,
+          color: `var(--color-presentational-${variant}-6)`,
           '.octicon': {
-            fill: `var(--presentational-ui-${variant}-text)`,
+            fill: `var(--color-presentational-${variant}-6)`,
           },
         }}
       >
@@ -75,12 +77,12 @@ const renderKitchenSink = (variant: (typeof variants)[number], width?: number) =
         <Button
           variant="primary"
           sx={{
-            backgroundColor: `var(--presentational-ui-${variant}-background-solid)`,
+            backgroundColor: `var(--color-presentational-${variant}-6)`,
             '&:hover': {
-              backgroundColor: `var(--presentational-ui-${variant}-background-solidHover)`,
+              backgroundColor: `var(--color-presentational-${variant}-7)`,
             },
             '&:active': {
-              backgroundColor: `var(--presentational-ui-${variant}-background-solidPressed)`,
+              backgroundColor: `var(--color-presentational-${variant}-8)`,
             },
           }}
         >
@@ -89,41 +91,56 @@ const renderKitchenSink = (variant: (typeof variants)[number], width?: number) =
         <Token
           text="Default Token"
           sx={{
-            backgroundColor: `var(--presentational-ui-${variant}-background-muted)`,
-            border: `0px solid var(--presentational-ui-${variant}-border-muted)`,
-            color: `var(--presentational-ui-${variant}-text)`,
+            backgroundColor: `var(--color-presentational-${variant}-0)`,
+            border: `0px solid var(--color-presentational-${variant}-4)`,
+            color: `var(--color-presentational-${variant}-6)`,
             '&:hover': {
-              backgroundColor: `var(--presentational-ui-${variant}-background-mutedHover)`,
+              color: `var(--color-presentational-${variant}-8)`,
+              backgroundColor: `var(--color-presentational-${variant}-1)`,
             },
             '&:active': {
-              backgroundColor: `var(--presentational-ui-${variant}-background-mutedPressed)`,
+              color: `var(--color-presentational-${variant}-9)`,
+              backgroundColor: `var(--color-presentational-${variant}-2)`,
             },
           }}
         />
         <Label
           sx={{
-            border: `1px solid var(--presentational-ui-${variant}-background-solid)`,
-            color: `var(--presentational-ui-${variant}-background-solid)`,
+            border: `1px solid var(--color-presentational-${variant}-6)`,
+            color: `var(--color-presentational-${variant}-6)`,
           }}
         >
           System label
         </Label>
-        <CircleBadge sx={{color: `var(--presentational-ui-${variant}-text)`}} size={60}>
+        <CircleBadge sx={{color: `var(--color-presentational-${variant}-6)`}} size={60}>
           <CircleBadge.Icon icon={ZapIcon} />
         </CircleBadge>
       </Box>
+      <Box
+        sx={{
+          marginTop: 3,
+          display: 'flex',
+          gap: 2,
+          alignItems: 'center',
+        }}
+      >
+        <ToggleSwitch></ToggleSwitch>
+        <SegmentedControl>
+          <SegmentedControl.Button defaultSelected>Preview</SegmentedControl.Button>
+          <SegmentedControl.Button>Raw</SegmentedControl.Button>
+          <SegmentedControl.Button>Blame</SegmentedControl.Button>
+        </SegmentedControl>
+      </Box>
+      <Box sx={{marginTop: 3, display: 'flex', gap: 2, alignItems: 'center'}}>
+        <TextInput placeholder="Find user"></TextInput>
+      </Box>
       <Box sx={{marginTop: 3, display: 'flex', gap: 2, alignItems: 'center'}}>
         <Text mr={3}>5 of 10</Text>
-        <ProgressBar
-          progress={50}
-          inline
-          sx={{width: '200px'}}
-          bg={`var(--presentational-ui-${variant}-background-solid)`}
-        />
+        <ProgressBar progress={50} inline sx={{width: '200px'}} bg={`var(--color-presentational-${variant}-6)`} />
         <CircleOcticon
           icon={CheckIcon}
           size={24}
-          sx={{bg: `var(--presentational-ui-${variant}-background-solid)`, color: 'fg.onEmphasis'}}
+          sx={{bg: `var(--color-presentational-${variant}-6)`, color: 'fg.onEmphasis'}}
         />
       </Box>
       <ActionList>
@@ -135,15 +152,15 @@ const renderKitchenSink = (variant: (typeof variants)[number], width?: number) =
         </ActionList.Item>
         <ActionList.Item
           sx={{
-            color: `var(--presentational-ui-${variant}-text)`,
+            color: `var(--color-presentational-${variant}-6)`,
             '&:hover:not([aria-disabled])': {
-              color: `var(--presentational-ui-${variant}-text)`,
-              backgroundColor: `var(--presentational-ui-${variant}-background-mutedHover)`,
+              color: `var(--color-presentational-${variant}-6)`,
+              backgroundColor: `var(--color-presentational-${variant}-1)`,
             },
           }}
         >
           <ActionList.LeadingVisual>
-            <AlertIcon fill={`var(--presentational-ui-${variant}-text)`} />
+            <AlertIcon fill={`var(--color-presentational-${variant}-6)`} />
           </ActionList.LeadingVisual>
           4 vulnerabilities
         </ActionList.Item>
