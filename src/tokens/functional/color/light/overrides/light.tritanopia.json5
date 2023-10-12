@@ -83,7 +83,7 @@
     },
     closed: {
       muted: {
-        $value: '{base.color.gray.0}',
+        $value: '{base.color.grayWhite}',
         $type: 'color',
       },
       emphasis: {

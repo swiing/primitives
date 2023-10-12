@@ -11,6 +11,7 @@ export default {
 const bgColors = [
   'color-scale-black',
   'color-scale-white',
+  'color-scale-grayWhite',
   'color-scale-gray-0',
   'color-scale-gray-1',
   'color-scale-gray-2',
@@ -121,12 +122,13 @@ export const AllScales = () => {
       <Coral />
       <Black />
       <White />
+      <GrayWhite />
     </div>
   )
 }
 
 export const Gray = () => {
-  const grayColors = bgColors.filter(color => color.includes('gray'))
+  const grayColors = bgColors.filter(color => color.includes('gray-'))
   return (
     <div>
       {grayColors.map(color => (
@@ -271,10 +273,24 @@ export const White = () => {
     <div>
       {whiteColors.map(color => (
         <>
-          <ColorScale color={color} key={color} />
+          <ColorScale color={color} border key={color} />
         </>
       ))}
     </div>
   )
 }
 White.tags = ['excludeSnapshot']
+
+export const GrayWhite = () => {
+  const grayWhiteColors = bgColors.filter(color => color.includes('grayWhite'))
+  return (
+    <div>
+      {grayWhiteColors.map(color => (
+        <>
+          <ColorScale color={color} border key={color} />
+        </>
+      ))}
+    </div>
+  )
+}
+GrayWhite.tags = ['excludeSnapshot']

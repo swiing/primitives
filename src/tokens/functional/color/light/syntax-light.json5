@@ -321,7 +321,7 @@
         invalid: {
           illegal: {
             text: {
-              $value: '{base.color.gray.0}',
+              $value: '{base.color.grayWhite}',
               $type: 'color',
               $extensions: {
                 'org.primer.figma': {
@@ -347,7 +347,7 @@
         carriage: {
           return: {
             text: {
-              $value: '{base.color.gray.0}',
+              $value: '{base.color.grayWhite}',
               $type: 'color',
               $extensions: {
                 'org.primer.figma': {

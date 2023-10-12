@@ -20,6 +20,11 @@
         $type: 'color',
         $description: 'Avoid using scales, use other functional tokens instead',
       },
+      grayWhite: {
+        $value: '{base.color.grayWhite}',
+        $type: 'color',
+        $description: 'Avoid using scales, use other functional tokens instead',
+      },
       gray: {
         '0': {
           $value: '{base.color.gray.0}',

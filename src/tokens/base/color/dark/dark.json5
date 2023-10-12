@@ -33,6 +33,15 @@
         },
         alpha: 0,
       },
+      grayWhite: {
+        $value: '#F5F7F9',
+        $type: 'color',
+        $extensions: {
+          'org.primer.figma': {
+            "collection": "base/color/dark",
+          },
+        },
+      },
       gray: {
         '0': {
           $value: '#f0f6fc',
