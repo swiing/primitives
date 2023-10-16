@@ -228,7 +228,7 @@
       },
       green: {
         '0': {
-          $value: '#aff5b4',
+          $value: '#0a150f',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -237,7 +237,7 @@
           },
         },
         '1': {
-          $value: '#7ee787',
+          $value: '#11271b',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -246,7 +246,7 @@
           },
         },
         '2': {
-          $value: '#56d364',
+          $value: '#183e28',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -255,7 +255,7 @@
           },
         },
         '3': {
-          $value: '#3fb950',
+          $value: '#1b502f',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -264,7 +264,7 @@
           },
         },
         '4': {
-          $value: '#2ea043',
+          $value: '#1e6638',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -273,7 +273,7 @@
           },
         },
         '5': {
-          $value: '#238636',
+          $value: '#238642',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -282,7 +282,7 @@
           },
         },
         '6': {
-          $value: '#196c2e',
+          $value: '#26ab4c',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -291,7 +291,7 @@
           },
         },
         '7': {
-          $value: '#0f5323',
+          $value: '#24c64d',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -300,7 +300,7 @@
           },
         },
         '8': {
-          $value: '#033a16',
+          $value: '#33e159',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -309,7 +309,7 @@
           },
         },
         '9': {
-          $value: '#04260f',
+          $value: '#84f198',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -412,7 +412,7 @@
       },
       orange: {
         '0': {
-          $value: '#ffdfb6',
+          $value: '#301408',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -421,7 +421,7 @@
           },
         },
         '1': {
-          $value: '#ffc680',
+          $value: '#3a1808',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -430,7 +430,7 @@
           },
         },
         '2': {
-          $value: '#ffa657',
+          $value: '#5b260b',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -439,7 +439,7 @@
           },
         },
         '3': {
-          $value: '#f0883e',
+          $value: '#78320d',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -448,7 +448,7 @@
           },
         },
         '4': {
-          $value: '#db6d28',
+          $value: '#963f0d',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -457,7 +457,7 @@
           },
         },
         '5': {
-          $value: '#bd561d',
+          $value: '#c4530e',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -466,7 +466,7 @@
           },
         },
         '6': {
-          $value: '#9b4215',
+          $value: '#f36f16',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -475,7 +475,7 @@
           },
         },
         '7': {
-          $value: '#762d0a',
+          $value: '#f7802b',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -484,7 +484,7 @@
           },
         },
         '8': {
-          $value: '#5a1e02',
+          $value: '#fca969',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
@@ -493,7 +493,7 @@
           },
         },
         '9': {
-          $value: '#3d1300',
+          $value: '#febf8a',
           $type: 'color',
           $extensions: {
             'org.primer.figma': {
